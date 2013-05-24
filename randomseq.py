@@ -37,7 +37,7 @@ else:
 if val is 'q':
     exit(0)
 
-startTime = time.time()
+start_time = time.time()
 
 for seq_number in seq_list:
     print "Writing sequence file number", seq_number,
@@ -101,8 +101,8 @@ for seq_number in seq_list:
         print "Estimated time remaining:", min_rem, "minutes",
         print sec_rem, "seconds\n"
 
-endTime = time.time()
-runTime = endTime - startTime
+end_time = time.time()
+run_time = end_time - start_time
 
 print ('\a')  # terminal bell
 print "\nDone"
