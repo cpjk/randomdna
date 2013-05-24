@@ -1,4 +1,4 @@
 randomseq
 =========
 
-Command-line utility to generate fasta-formated files of random nucleotide sequences.
+Command-line utility to generate FASTA-formated files of random nucleotide sequences.
