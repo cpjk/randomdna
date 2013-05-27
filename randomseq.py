@@ -34,8 +34,8 @@ else:
     val = ''
     while not val:
         val = raw_input()
-if val is 'q':
-    exit(0)
+    if val is 'q':
+        exit(0)
 
 start_time = time.time()
 
