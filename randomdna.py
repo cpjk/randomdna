@@ -106,4 +106,4 @@ run_time = end_time - start_time
 
 print ('\a')  # terminal bell
 print "\nDone"
-print("Execution time: %.2f seconds." % runTime)
+print("Execution time: %.2f seconds." % run_time)
