@@ -1,6 +1,6 @@
 randomdna
 =========
 
-This command-line utility generates FASTA-formated files of random DNA nucleotide sequences.
+This script generates FASTA-formatted, randomly-generated DNA sequences.
 
-The client passes the length and number of sequence files as arguments.
+Usage: python randomdna.py [number of sequences] [length of each sequence]
