@@ -1,4 +1,4 @@
-if [-f "output/sequences.fasta"]
+if [-f output/sequences.fasta]
 then
-rm output/sequences.fasta;
+    rm output/sequences.fasta;
 fi
