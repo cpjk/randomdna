@@ -1,1 +1,3 @@
-rm output/s$FILE*
+if [-f "output/sequences.fasta"]
+then
+rm output/sequences.fasta
