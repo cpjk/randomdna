@@ -24,18 +24,6 @@ outputDir = os.path.join(os.curdir, 'output')
 if not os.path.exists(outputDir):
     os.makedirs(outputDir)
 
-if os.path.exists(os.path.join(os.curdir, 'cleanup.sh')):
-    os.system("./cleanup.sh")
-else:
-    print "cleanup.sh was not found in the working directory.",
-    print "Enter 'q' to exit or any another key to continue without",
-    print "wiping previous output files."
-    val = ''
-    while not val:
-        val = raw_input()
-    if val is 'q':
-        exit(0)
-
 start_time = time.time()
 alphabet = ['a', 'c', 't', 'g']
 filename = "sequences.fasta"
@@ -53,12 +41,11 @@ for seq_number in seq_list:
         seqfile.write('\n')
 
     for index in range(1, chars_in_last_line + 1):
-                    # Write the last line in the sequence
+        # Write the last line in the sequence
         seqfile.write(random.choice(alphabet))
 
-end_time = time.time()
-run_time = end_time - start_time
+run_time = time.time() - start_time
 
-print ('\a')  # terminal bell
+print ('\b')
 print "\nDone"
 print("Execution time: %.2f seconds." % run_time)
