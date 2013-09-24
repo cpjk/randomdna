@@ -25,10 +25,10 @@ outputdir = os.path.join(os.curdir, 'output')
 if not os.path.exists(outputdir):
     os.makedirs(outputdir)
 
-start_time = time.time()
 dna_alphabet = ['a', 'c', 't', 'g']
 filename = "sequences.fasta"
 seqfile = open(os.path.join(outputdir, filename), 'w')
+start_time = time.time()
 
 for seq_number in seq_list:
     print "Writing sequence file number", seq_number,
